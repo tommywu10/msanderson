@@ -10,6 +10,17 @@ body {
     flex-direction: column;
     background-color: hsl(0,0%,90%);
     color: rgb(107, 8, 107);
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+}
+
+header a {
+    font-size: 40px;
+    margin: 30px;
 }
 
 .circle {
