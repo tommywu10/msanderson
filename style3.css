@@ -56,10 +56,6 @@ h1 {
     text-align: center;
 }
 
-polygon {
-
-}
-
 svg {
    margin: 0 23px;
    animation: flipY 3s infinite;
