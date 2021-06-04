@@ -32,6 +32,7 @@ header a {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: hsl(0,0%,90%)
 }
 
 section {
@@ -64,6 +65,15 @@ svg {
    animation: flipY 3s infinite;
 }
 
+.graphic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    z-index: 1;
+}
+
 
 /* @keyframes flipY{
     from {
@@ -76,11 +86,10 @@ svg {
     
 }
 
-
+ */
 
 @media (min-width: 768px) {
     p {
         width: 400px;
     }
 }
- */

@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     background-color: hsl(0,0%,90%);
     color: rgb(107, 8, 107);
+    position: relative;
 }
 
 header {
@@ -30,6 +31,8 @@ header a {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: hsl(0,0%,90%)
+
 }
 
 p {
@@ -61,6 +64,7 @@ section {
     align-items: center;
     flex-direction: column;
     width: 20%;
+    z-index: 1;
 }
 
 

@@ -62,7 +62,7 @@ var count = 500;
     particleCount: Math.floor(count * particleRatio)
     }));
     }
-/* ---------------------------------------------------------- */
+/* --------------------1ST GRAPHIC-------------------------------------- */
     fire(1, {
         decay: .86,
         gravity: 1,
@@ -73,6 +73,7 @@ var count = 500;
         spread: 360,
         startVelocity: 20,
         ticks: 100,
+        zIndex: 0
     });
     fire(1, {
         decay: .87,
@@ -97,8 +98,9 @@ var count = 500;
         startVelocity: 30,
         ticks: 100
     });
-/* ---------------------------------------------------------- */
-    fire(1, {
+/* ------------------2ND GRAPHIC---------------------------------------- */
+    setTimeout(function() {
+        fire(1, {
         decay: .86,
         gravity: 1,
         origin: { y: .4, x: .5 },
@@ -132,8 +134,10 @@ var count = 500;
         startVelocity: 30,
         ticks: 100
     });
-/* ---------------------------------------------------------- */
-    fire(1, {
+    }, 400)
+/* --------------------3rd GRAPHIC-------------------------------------- */
+    setTimeout(function() {
+        fire(1, {
         decay: .86,
         gravity: 1,
         origin: { y: .4, x: .78 },
@@ -167,6 +171,7 @@ var count = 500;
         startVelocity: 30,
         ticks: 100
     });
+    }, 800)
 
 
     /* var end = Date.now() + (30 * 1000);

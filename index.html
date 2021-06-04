@@ -20,12 +20,14 @@
     <a href="page3.html">Page 3</a>
 </header>
 
-<div class="circle">
-    <h1>1<span>st</span></h1>
+<div class="graphic-container">
+    <div class="circle">
+        <h1>1<span>st</span></h1>
+    </div>
+    
+    <p>Great sale Deborah! They will really love what we can do with that amount.</p>
 </div>
 
-<p>Great sale Deborah! They will really love what we can do with that amount.</p>
-    
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js">
     
 </script>
@@ -52,6 +54,7 @@
         spread: 180,
         startVelocity: 20,
         ticks: 100,
+        zIndex: 0,
     });
     fire(1, {
         decay: .87,

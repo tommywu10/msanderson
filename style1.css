@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     background-color: hsl(0,0%,90%);
     color: rgb(107, 8, 107);
+    position: relative;
 }
 
 header {
@@ -31,6 +32,7 @@ header a {
     align-items: center;
     border-radius: 50%;
     --animate-duration: 1.5s;
+    background-color: hsl(0,0%,90%)
 }
 
 p {
@@ -52,6 +54,15 @@ span {
     font-size: 35px;
     position: absolute;
     top: 45px;
+}
+
+.graphic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
