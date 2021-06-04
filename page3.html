@@ -15,23 +15,162 @@
         <a href="page3.html">Page 3</a>
     </header>
     
-<div class="circle">
-    <svg height="210" width="500" text-align="center" margin="0 auto"> 
-        <polygon points="100,10 40,198 190,78 10,78 160,198"
-        style="fill:rgb(107, 8, 107);fill-rule:nonzero;" />
-      </svg> 
-</div>
+<section>
+  <div class="graphic-container">
+      <div class="circle">
+          <h1>1<span>st</span></h1>
+      </div>
+      
+      <p>Great sale Deborah! They will really love what we can do with that amount.</p>
+  </div>
+      
+  
+  <div class="graphic-container">
+      <div class="circle">
+          <h1>100%</h1>
+      </div>
+      <p>Great sale Deborah! They will really love what we can do with that amount.</p>
+  </div>
 
-<p>Great sale Deborah! They will really love what we can do with that amount.</p>
+  <div class="graphic-container">
+    <div class="circle">
+      <svg height="210" width="500" text-align="center" margin="0 auto"> 
+          <polygon points="100,10 40,198 190,78 10,78 160,198"
+          style="fill:rgb(107, 8, 107);fill-rule:nonzero;" />
+        </svg> 
+  </div>
+  
+  <p>Great sale Deborah! They will really love what we can do with that amount.</p>
+  </div>
+</section>
+    
+
     
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js">
     
 </script>
     
 <script>
-    var end = Date.now() + (30 * 1000);
 
-// go Buckeyes!
+var count = 500;
+    var defaults = {
+    origin: { y: 0.7 }
+    };
+
+    function fire(particleRatio, opts) {
+    confetti(Object.assign({}, defaults, opts, {
+    particleCount: Math.floor(count * particleRatio)
+    }));
+    }
+/* ---------------------------------------------------------- */
+    fire(1, {
+        decay: .86,
+        gravity: 1,
+        origin: { y: .4, x: 25 },
+        particleCount: 400,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 20,
+        ticks: 100,
+    });
+    fire(1, {
+        decay: .87,
+        gravity: 1,
+        origin: { y: 0.4, x: .2 },
+        particleCount: 600,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 25,
+        ticks: 100
+        });
+        
+    fire(1, {
+        decay: .88,
+        gravity: 1,
+        origin: { y: 0.4, x: .2 },
+        particleCount: 800,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 30,
+        ticks: 100
+    });
+/* ---------------------------------------------------------- */
+    fire(1, {
+        decay: .86,
+        gravity: 1,
+        origin: { y: .4, x: .5 },
+        particleCount: 400,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 20,
+        ticks: 100,
+    });
+    fire(1, {
+        decay: .87,
+        gravity: 1,
+        origin: { y: 0.4, x: .5 },
+        particleCount: 600,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 25,
+        ticks: 100
+        });
+        
+    fire(1, {
+        decay: .88,
+        gravity: 1,
+        origin: { y: 0.4, x: .5 },
+        particleCount: 800,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 30,
+        ticks: 100
+    });
+/* ---------------------------------------------------------- */
+    fire(1, {
+        decay: .86,
+        gravity: 1,
+        origin: { y: .4, x: .78 },
+        particleCount: 400,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 20,
+        ticks: 100,
+    });
+    fire(1, {
+        decay: .87,
+        gravity: 1,
+        origin: { y: 0.4, x: .78 },
+        particleCount: 600,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 25,
+        ticks: 100
+        });
+        
+    fire(1, {
+        decay: .88,
+        gravity: 1,
+        origin: { y: 0.4, x: .78 },
+        particleCount: 800,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 30,
+        ticks: 100
+    });
+
+
+    /* var end = Date.now() + (30 * 1000);
+
 var colors = ['#e51b2c', '#ece236'];
 
 (function frame() {
@@ -53,7 +192,7 @@ var colors = ['#e51b2c', '#ece236'];
   if (Date.now() < end) {
     requestAnimationFrame(frame);
   }
-}());
+}()); */
 </script>
 </body>
 </html>

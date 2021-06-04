@@ -23,9 +23,9 @@ header a {
 }
 
 .circle {
-    border: rgb(107, 8, 107) solid 10px;
-    width: 200px;
-    height: 200px;
+    border: #6b086b solid 8px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,8 +34,8 @@ header a {
 
 p {
     font-family: Lato, Arial;
-    font-size: 24px;
-    width: 300px;
+    font-size: 14px;
+    width: 150px;
     text-align: center;
     animation-delay: .5s;
 }
@@ -45,11 +45,34 @@ h1 {
     font-family: Merriweather, Arial;
     position: relative;
     text-align: center;
+    font-size: 30px;
 }
 
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.graphic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+}
+
+
 @media (min-width: 768px) {
+    .circle {
+        border: #6b086b solid 10px;
+        width: 200px; height: 200px;
+    }
+
     p {
-        width: 400px;
+        width: 300px;
+        font-size: 20px;
     }
 }
 

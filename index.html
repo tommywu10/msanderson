@@ -20,19 +20,64 @@
     <a href="page3.html">Page 3</a>
 </header>
 
-<div class="circle animate__animated animate__bounce">
+<div class="circle">
     <h1>1<span>st</span></h1>
 </div>
 
-<p class="animate__animated animate__fadeIn">Great sale Deborah! They will really love what we can do with that amount.</p>
+<p>Great sale Deborah! They will really love what we can do with that amount.</p>
     
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js">
     
 </script>
     
 <script>
+    var count = 500;
+    var defaults = {
+    origin: { y: 0.7 }
+    };
 
-    var duration = 30 * 1000;
+    function fire(particleRatio, opts) {
+    confetti(Object.assign({}, defaults, opts, {
+    particleCount: Math.floor(count * particleRatio)
+    }));
+    }
+
+    fire(1, {
+        decay: .86,
+        gravity: 1,
+        origin: { y: .4 },
+        particleCount: 400,
+        scalar: .8,
+        shapes: "square",
+        spread: 180,
+        startVelocity: 20,
+        ticks: 100,
+    });
+    fire(1, {
+        decay: .87,
+        gravity: 1,
+        origin: { y: 0.4 },
+        particleCount: 600,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 25,
+        ticks: 100
+        });
+        
+    fire(1, {
+        decay: .88,
+        gravity: 1,
+        origin: { y: 0.4 },
+        particleCount: 800,
+        scalar: .8,
+        shapes: "square",
+        spread: 360,
+        startVelocity: 30,
+        ticks: 100
+    });
+
+    /* var duration = 30 * 1000;
     var end = Date.now() + duration;
 
     
@@ -64,7 +109,7 @@
     });
 
     }, 850)
-
+ */
     
     
 </script>
